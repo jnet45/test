@@ -1,54 +1,13 @@
-<xml xmlns="https://developers.google.com/blockly/xml">
-  <variables>
-    <variable id="total">total</variable>
-    <variable id="i">i</variable>
-  </variables>
-  <block type="variables_set" id="set_total" x="10" y="10">
-    <field name="VAR" id="total">total</field>
-    <value name="VALUE">
-      <shadow type="math_number" id="num0">
-        <field name="NUM">0</field>
-      </shadow>
-    </value>
-    <next>
-      <block type="controls_for" id="for_loop">
-        <field name="VAR" id="i">i</field>
-        <value name="FROM">
-          <shadow type="math_number" id="num1">
-            <field name="NUM">1</field>
-          </shadow>
-        </value>
-        <value name="TO">
-          <shadow type="math_number" id="num3">
-            <field name="NUM">3</field>
-          </shadow>
-        </value>
-        <value name="BY">
-          <shadow type="math_number" id="num1_by">
-            <field name="NUM">1</field>
-          </shadow>
-        </value>
-        <statement name="DO">
-          <block type="variables_set" id="add_to_total">
-            <field name="VAR" id="total">total</field>
-            <value name="VALUE">
-              <block type="math_arithmetic" id="add">
-                <field name="OP">ADD</field>
-                <value name="A">
-                  <block type="variables_get" id="get_total">
-                    <field name="VAR" id="total">total</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="variables_get" id="get_i">
-                    <field name="VAR" id="i">i</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </statement>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="basic_forever" x="70" y="50">
+    <statement name="HANDLER">
+      <block type="basic_show_leds">
+        <field name="MATRIX">10000
+10000
+10000
+10000
+11111</field>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
